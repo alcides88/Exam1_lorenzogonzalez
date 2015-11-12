@@ -1,0 +1,68 @@
+---
+title: "MidTerm Q11"
+author: "Alcides Lorenzo"
+date: "November 8, 2015"
+output: html_document
+---
+
+
+  1-Make a table of the average exon and transcript length (±SE) for each chromosome. RMarkdown cheatsheet here: https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+
+```{r Q1 chunk, echo=TRUE, eval=TRUE}
+transcript <- read.csv("Homo_sapiens.GRCh38.82.abinitio_transcript.bed", header = FALSE, sep = "")
+exon <- read.csv("Homo_sapiens.GRCh38.82.abinitio_exon.bed", header = FALSE, sep = "") #reading the two datasets, and setting no header, and field separation.
+
+colnames(transcript)[1] <- "chr"
+colnames(transcript)[3] <- "seq_type"
+colnames(transcript)[4] <- "start"
+colnames(transcript)[5] <- "end" 
+colnames(exon)[c(1, 3, 4, 5)] <- colnames(transcript)[c(1, 3, 4 ,5)] #changing the column names for relevant columns to ease workflow.
+
+transcript$length <- transcript$end - transcript$start
+exon$length <- exon$end - exon$start  #creating a field for sequence length.
+
+transcript_length_mean <- aggregate(transcript$length, list(chr=transcript$chr), mean)
+exon_length_mean <- aggregate(exon$length, list(chr=exon$chr), mean)  #creating the tables with the mean length for each chromosome
+
+head(transcript_length_mean)
+head(exon_length_mean)  #showing a portion of the tables.
+```
+
+  2-Make a frequency histogram of exon lengths for the X and Y chromosomes, either separately or together.
+
+```{r Q2 chunk, eval=TRUE, echo=TRUE}
+
+exon_X_length <- subset(exon, chr == "X", c(length))
+exon_Y_length <- subset(exon, chr == "Y", c(length))  #creating the data for the histograms.
+
+hist(exon_X_length$length, right = TRUE, main="Chromosome X", xlab="Exon length", breaks = nrow(exon_X_length))
+hist(exon_Y_length$length, right = TRUE, main="Chromosome Y", xlab="Exon length", breaks = nrow(exon_Y_length)) #plotting the histograms.
+
+# Axis adjusted for better visualization.
+hist(exon_X_length$length, right = TRUE, xlim = c(0, 300), main="Chromosome X (modified x-axis)", xlab="Exon length", breaks = nrow(exon_X_length))
+hist(exon_Y_length$length, right = TRUE, xlim = c(0, 400), main="Chromosome Y (modified y-axis)", xlab="Exon length", breaks = nrow(exon_Y_length)) #plotting the histograms.
+```
+
+  3-Is there a relationship between total chromosome length and average exon length across chromosomes? (Hint: plot average exon length per chromosome against each chromosome's total length, and estimate a correlation coefficient using R).
+  
+```{r Q3 chunk, eval=TRUE, echo= TRUE}
+
+total_chr_length <- aggregate(transcript$length, list(chr=transcript$chr), sum) #to create a table with the total length of the chromosomes.
+
+colnames(exon_length_mean)[2] <- "mean"
+colnames(total_chr_length)[2] <- "sum"  #changing the names of the columns to avoid confusion.
+
+exon_chr_merge <- merge(total_chr_length, exon_length_mean, by.x = "chr", by.y = "chr")  #creating a new table with the datat to use in the graph.
+
+plot(exon_chr_merge$sum, exon_chr_merge$mean, pch=19, xlab = "Total chr length", ylab = "Average exon length", cex = 0.5) + abline(lm(mean ~ sum, data=exon_chr_merge), col="red") + title(main = "Scatter plot with best-fit line")  #plotting, specifying axis label, title, size of plot, and color of line.
+
+cor(exon_chr_merge$sum, exon_chr_merge$mean)  #calculation of correlation coefficient.
+
+#This result, by being close to 0, shows a weak linear relationship between average exon length, and chromosome length
+
+plot(exon_chr_merge$sum, exon_chr_merge$mean, pch=19, xlab = "Total chr length", ylab = "Average exon length", xlim = c(0, 400000), ylim = c(0, 1000), cex = 0.5) + abline(lm(mean ~ sum, data=exon_chr_merge), col="red") + title(main = "Scatter plot with axis adjustement")  # same plot with some axis trimming for better visualization.
+
+```
+  
+  
+  4-Return these tasks in a single RMarkdown document, saved either as pdf or html, with tables and figures embedded. (15 points)

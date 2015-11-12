@@ -1,0 +1,195 @@
+1) Should ‘ecological modeling of populations of organisms’ be considered a bioinformatics research area or not? Briefly explain your answer. 
+
+No, it should not be considered a bioinformatics research area. The main objective of bioinformatics is the use of computational tools for storage, retrieval, and distribution of information related to biological macromolecules such as DNA, RNA, and proteins. Population dynamic modeling could be better categorized within the target of study of computational biology, instead of bioinformatics.
+
+2) True/False. All molecular sequence data available at NCBI are peer-reviewed and therefore are more reliable than sequences obtained from other data bank services.
+
+False. Although NCBI is peer-reviewed and hand-curated by experts, it would be incorrect to establish that it is absolutely more reliable than other data bank services. The quality of the data found in NCBI is very high, although there is some room for redundancies. One example of a good data bank, that can compete with NCBI in quality and reliability of information, is Swiss Prot.
+
+
+3) A database search returns a match with an E-value of 3.4 e-178. How do you interpret this result?
+
+The e-value is related to the matching score of a sequence query. It represents the chance of finding a match with that same score within the sequence, In this case, it would represent that the chances of finding X specific score is of 3.4 in 10^178.
+
+4) What are two ways that we increase the copy number of our target DNA before sequencing it?
+
+The first one is PCR, by the use of specific primers one can select for a region of interest within the genome and amplify this target producing billion of copies. Another classic approach to increase the copy numbers is to clone the target DNA into a plasmid, transform bacteria with the plasmid, and these bacteria will divide thus replicating our DNA region of interest, finally obtaining many copies of it. 
+
+5) How many genomes do eukaryotes generally have per cell? Prokaryotes?
+
+Generally Eukaryotes have 2-3 copies of theiemar genome per cell, on the
+other hand, prokaryotes usually have one, although some may have multiple copies of their genome and their plasmids in one cell.
+
+6) (15 pts) You are interested in floral color evolution in the spurge family of plants. You want to find really close homologs as well as homologs from distantly related organisms. You elect to do this in two different ways, first, you decide to (3 points each below):
+
+	1-Find a protein sequence of an R2R3-MYB transcription factor from Jatropha curcas --what is its accession number?
+
+	R2R3 MYB transcription factor
+	Jatropha curcas (Barbados nut)
+	Accession number:G9B6Q4
+	Source:UniProt - http://www.uniprot.org/uniprot/G9B6Q4
+
+        2-What type of blast is the most appropriate?
+
+	Blastp would be the most appropiate as it is an amino acid query.
+
+	3-When you do the blast to the nr database at NCBI, how many hits do you return?
+
+	100 hits.
+
+	4-Using the taxonomy report, indicate from how many species you found homologs.
+
+	I found homologs from 38 species.(Q6_Taxonomy_report.txt in git repository)
+
+        5-Download fasta files of the top 6 hits – pick sequences that are of similar length to your sequence from J. curcas, have e-values that suggest significant homology, and are from different species. List the accession numbers from these top 6 hits and their e-values from your blast.
+
+Matches from other species including PREDICTIONS:
+
+	PREDICTED: myb-related protein 308-like [Populus euphratica]
+	E-value: 3e-110	Ident: 62% 	Accession: XP_011019362.1
+
+	hypothetical protein POPTR_0006s23840g [Populus trichocarpa]
+	E-value: 1e-105	Ident: 60% 	Accession: XP_002308528.1
+
+	MYB transcription factor R2R3-like protein [Populus tremuloides]
+	E-value: 3e-105	Ident: 61% 	Accession: ACR83705.1
+
+	transcription factor MYB251 [Fagus crenata]
+	E-value: 6e-98	Ident: 57% 	Acession: BAG75107.1
+
+	Duplicated homeodomain-like superfamily protein [Theobroma cacao]
+	E-value: 3e-96	Ident: 55% 	Accession: XP_007012408.1
+
+	hypothetical protein POPTR_0018s05530g [Populus trichocarpa]
+	E-value: 4e-96	Ident: 56% 	Accession: XP_006371894.1
+
+	##FASTA files located in git repository.
+
+7) (15 pts) Now, find a nucleotide sequence of the same gene from Jatropha curcas-what is its accession number (2pts)?
+
+	Jatropha curcas R2R3 MYB transcription factor mRNA, complete cds
+	Accession number: HM600732 (Version - HM600732.1)
+	Source: http://www.ncbi.nlm.nih.gov/nuccore/HM600732.1
+
+        1-What type of blast is the most appropriate in this case? (3 pts).
+	
+	The most appropiate type of Blast woud be Blastn as it is a nucleotide only query.
+
+        2-When you do the blast to the nr database at NCBI, how many hits do you return (3 pts)?
+
+	100 hits.
+
+        3-Using the taxonomy report, indicate from how many species you found homologs (3 pts).
+
+	I found homologs for 40 species. (Q7_Taxonomy_report.txt in git repository)
+
+        4-Download fasta files of the top 6 hits – pick sequences that are of similar length to your sequence from curcas, and have e-values that suggest significant homology. List the accession numbers from these top 6 hits and their e-values from your blast (3 pts).
+
+Matches from other species including PREDICTIONS:
+
+	Populus trichocarpa hypothetical protein (POPTR_0018s05530g) mRNA, complete cds
+	E-value: 3e-129	Ident: 83% 	Accession: XM_006371832.1
+
+	Populus tremuloides MYB transcription factor R2R3-like protein (MYB086) mRNA, partial cds
+	E-value: 9e-129	Ident: 83% 	Accession: FJ573152.1
+
+	PREDICTED: Populus euphratica myb-related protein 308-like (LOC105122132), mRNA
+	E-value: 2e-125	Ident: 88% 	Accession: XM_011021060.1
+
+	Populus tremuloides MYB transcription factor R2R3-like protein (MYB134) mRNA, complete cds
+	E-value: 3e-123	Ident: 88% 	Accession: FJ573151.1
+
+	Populus trichocarpa hypothetical protein (POPTR_0006s23840g) mRNA, complete cds
+	E-value: 1e-122	Ident: 88% 	Accession: XM_002308492.2
+
+	PREDICTED: Vitis vinifera myb-related protein 308 (LOC100264614), mRNA
+	E-value: 3e-119	Ident: 88% 	Accession: XM_010650081.1
+
+	Theobroma cacao Duplicated homeodomain-like superfamily protein (TCM_037376) mRNA, complete cds
+	E-value: 3e-118	Ident: 88% 	Accession: XM_007012346.1
+ 
+	##FASTA files located in git repository.
+
+8) (15 pts) You have decided, as part of your dissertation, to investigate metapopulation dynamics of the Glanville fritillary butterfly and thus you need to measure population structure across a landscape. You would like to first assess what genomic tools are available for this non-model organism. (Each question below is worth 3 points).
+
+	1-Are there any groups that have developed tools for this species, and if so, what is their website address?
+
+	METAPOPULATION RESEARCH CENTRE: Department of Biosciences Faculty of Biological and Environmental Sciences, University of Helsinki.
+	http://www.helsinki.fi/science/metapop/research/mcgenome.html		
+
+        2-What tools are they suggesting will be developed?
+
+	
+
+        3-What tools have they developed?
+
+	-Lep-MAP software for constructing accurate linkage maps using high-density SNP data (Rastas et al. 2013).
+	-MIP Scaffolder for genome scaffolding (Salmela et al. 2012).
+	-LiSs (Linkage map Superscaffolder) for superscaffolding (unpublished).
+	-Coral and HybridSHREC for read error correction (Salmela and Schröder 2011; Salmela 2010).
+	-PANNZER for functional annotation (Radivojac et al. 2013).
+	-EPT and SANS for orthology prediction (Ta et al. 2011; Koskinen and Holm 2012).
+
+        4-Can you find this information on NCBI?
+
+	Yes.
+	http://www.ncbi.nlm.nih.gov/genome/814
+	http://www.ncbi.nlm.nih.gov/assembly/195511
+
+        5-Describe how you would take sequences that may be available for this species and develop a strategy for developing more SNPs that are not micro-array dependent. You will need to delve into outside resources prior to formulating a good answer!
+
+ 
+
+9) (15 points; basic unix) Using the Homo_sapiens.GRCh38.cds.all.fa file (link here), answer the following questions. Supply the unix command you used followed by the answer. (Each question is worth 5 points).
+
+	1-How many sequences are in the fasta file?
+
+	$ grep -c "^>" Homo_sapiens.GRCh38.cds.all.fa
+	101933
+
+        2-How many lines are in the fasta file?
+
+	$ wc -l Homo_sapiens.GRCh38.cds.all.fa
+	2066758 Homo_sapiens.GRCh38.cds.all.fa
+
+        3-Is the adapter sequence ‘AGATCGG’ present within the file?
+
+	It is, I also used the function 'count' while getting the answer.
+	$ grep -c "AGATCGG" Homo_sapiens.GRCh38.cds.all.fa 
+	2950
+
+ 
+
+10) (15 points; advanced unix) Perform the following tasks. Supply the unix command you used and the file showing your changes. Each question is worth 5 points.
+
+	1-At the command line, change the name of the fasta headers in the file Homo_sapiens.GRCh38.cds.all.fa from their current name to a linear sequence, with the first entry with the fasta header >1, the second >2, and so on.
+
+	# I was not sure if the change was in the name of the sequence, or the whole header, so I provide both commands but the file was produced just for the second one, meaning that I only change  the name of the sequence within the whole line.
+	awk '/^>/{print ">" 1++i; next}{print}' < Homo_sapiens.GRCh38.cds.all.fa > Homo_sapiens.GRCh38.cds.all_name_changed.fa
+	awk '/^>/{print ">" 1++i, $2, $3, $4, $5, $6; next}{print}' < Homo_sapiens.GRCh38.cds.all.fa > Homo_sapiens.GRCh38.cds.all_name_changed.fa
+	
+	2-Using the file Homo_sapiens.GRCh38.82.abinitio.gtf (link here), made a .bed file that includes the following information, in this order: chromosome of the feature, type of feature (ie exon or transcript) starting bp, and ending bp.
+
+	grep -v "^#" Homo_sapiens.GRCh38.82.abinitio.gtf | cut -f1,3,4,5 > Homo_sapiens.GRCh38.82.abinitio.bed
+
+	3-Use grep to make two files from Homo_sapiens.GRCh38.82.abinitio.gtf: one with only transcripts and one with only exons. Submit these as part of question 10; you will be using them again later.
+	
+	$ grep -v "^#" Homo_sapiens.GRCh38.82.abinitio.gtf | grep "transcript" > Homo_sapiens.GRCh38.82.abinitio_transcript.bed
+	$ grep -v "^#" Homo_sapiens.GRCh38.82.abinitio.gtf | grep "exon" > Homo_sapiens.GRCh38.82.abinitio_exon.bed
+
+ 
+
+11) (30 points total; ggplot2 in R and RMarkdown) To complete these tasks, you will need to load the exon or transcript-only files that you made above into R Studio. Alternatively, you can use the Homo_sapiens.GRCh38.82.abinitio.gtf file and subset it as necessary.
+
+	1-Make a table of the average exon and transcript length (±SE) for each chromosome. RMarkdown cheatsheet here: https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+        2-Make a frequency histogram of exon lengths for the X and Y chromosomes, either separately or together.
+        3-Is there a relationship between total chromosome length and average exon length across chromosomes? (Hint: plot average exon length per chromosome against each chromosome’s total length, and estimate a correlation coefficient using R).
+        4-Return these tasks in a single RMarkdown document, saved either as pdf or html, with tables and figures embedded. (15 points)
+
+ 
+
+12)(20 points) You want to run a long job to the flux to perform an RNA-seq experiment. Clearly the steps that take the longest are those that require you to map the reads back to your reference transcriptome. Write an example .pbs script that would allow you to run these commands, and turn this in. Hint: you can use a pbs script from our blast exercise and replace the blast command with your alignment commands.
+
+ 
+
+13) (15 points; git) Submit all of your work on a git repository named ‘Exam1_yourlastname,’ with a separate subdirectory (folder) with materials requested for each question.
