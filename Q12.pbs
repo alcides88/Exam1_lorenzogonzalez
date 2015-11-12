@@ -1,0 +1,51 @@
+#!/bin/sh
+#### PBS preamble
+
+#PBS -N Q12
+#PBS -M alcides@umich.edu
+#PBS -m abe
+#PBS -l nodes=1:ppn=12,mem=47gb,walltime=02:00:00
+#PBS -j oe
+#PBS -V 
+#PBS -A eeb416f15_ﬂux
+#PBS -l qos=ﬂux 
+#PBS -q ﬂux 
+
+#### End PBS preamble
+
+#  Show list of CPUs you ran on, if you're running under PBS
+if [ -n "$PBS_JOBID" ]; then echo -n "Running on nodes/cores: "; qstat -n $PBS_$
+
+#  Change to the directory you submitted from
+if [ -n "$PBS_O_WORKDIR" ]; then cd $PBS_O_WORKDIR; fi; echo -n "Current workin$
+echo
+
+#  Download file, unzip folder and content
+wget https://www.dropbox.com/s/1gxnyybqlazgvhm/BioinformaticsNov2.zip
+unzip BioinformaticsNov2.zip
+gunzip BioinformaticsNov2/*.gz
+
+#  Download sam2counts
+wget https://raw.githubusercontent.com/vsbuffalo/sam2counts/master/sam2counts.py
+
+#  Download and read sequences
+wget http://sourceforge.net/projects/rseqc/files/RSeQC-2.4.tar.gz 
+tar -xvzf RSeQC-2.4.tar.gz 
+cd RSeQC-2.4 
+
+#  Load pertinent modules
+module load med bwa 
+
+#  Echo job script commands as they are executed
+set -x
+
+#  Index FASTA file
+bwa index -a is IZNU-SOAPdenovo-Trans-assembly.fa > bwa_index.stdout 2> bwa_index.stderr
+
+#  Align
+bwa aln -t4 IZNU-SOAPdenovo-Trans-assembly.fa IZNU-read_1.fq > IZNU_R1.sai 2> IZNU_R1_bwa_aln.stderr
+bwa aln -t4 IZNU-SOAPdenovo-Trans-assembly.fa IZNU-read_2.fq > IZNU_R2.sai 2> IZNU_R2_bwa_aln.stderr
+
+#  Produce .sam alignment file
+bwa sampe IZNU-SOAPdenovo-Trans-assembly.fa IZNU_R1.sai IZNU_R2.sai IZNU-read_1.fq IZNU-read_2.fq > IZNU.sam 2> IZNU_sampe.stderr
+

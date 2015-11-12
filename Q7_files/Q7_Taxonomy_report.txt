@@ -1,0 +1,70 @@
+Taxonomy Report
+
+Spermatophyta ...................................   104 hits   40 orgs [root; cellular organisms; Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Embryophyta; Tracheophyta; Euphyllophyta]
+. Magnoliophyta .................................   103 hits   39 orgs 
+. . Mesangiospermae .............................   101 hits   38 orgs 
+. . . eudicotyledons ............................    81 hits   28 orgs 
+. . . . Pentapetalae ............................    79 hits   27 orgs [Gunneridae]
+. . . . . rosids ................................    72 hits   23 orgs 
+. . . . . . fabids ..............................    48 hits   18 orgs 
+. . . . . . . Malpighiales ......................    27 hits    6 orgs 
+. . . . . . . . Euphorbiaceae ...................     8 hits    2 orgs 
+. . . . . . . . . Jatropha curcas ...............     7 hits    1 orgs [Crotonoideae; Jatropheae; Jatropha]
+. . . . . . . . . Ricinus communis ..............     1 hits    1 orgs [Acalyphoideae; Acalypheae; Ricinus]
+. . . . . . . . Populus .........................    16 hits    3 orgs [Salicaceae; Saliceae]
+. . . . . . . . . Populus trichocarpa ...........     8 hits    1 orgs 
+. . . . . . . . . Populus tremuloides ...........     3 hits    1 orgs 
+. . . . . . . . . Populus euphratica ............     5 hits    1 orgs 
+. . . . . . . . Kandelia candel .................     3 hits    1 orgs [Rhizophoraceae; Kandelia]
+. . . . . . . Rosales ...........................    11 hits    7 orgs 
+. . . . . . . . Rosaceae ........................    10 hits    6 orgs 
+. . . . . . . . . Maloideae .....................     8 hits    4 orgs 
+. . . . . . . . . . Maleae ......................     4 hits    2 orgs 
+. . . . . . . . . . . Malus domestica ...........     2 hits    1 orgs [Malus]
+. . . . . . . . . . . Pyrus x bretschneideri ....     2 hits    1 orgs [Pyrus]
+. . . . . . . . . . Prunus ......................     4 hits    2 orgs [Amygdaleae]
+. . . . . . . . . . . Prunus mume ...............     2 hits    1 orgs 
+. . . . . . . . . . . Prunus persica ............     2 hits    1 orgs 
+. . . . . . . . . Fragaria ......................     2 hits    2 orgs [Rosoideae; Potentilleae; Fragariinae]
+. . . . . . . . . . Fragaria x ananassa .........     1 hits    1 orgs 
+. . . . . . . . . . Fragaria vesca subsp. vesca .     1 hits    1 orgs [Fragaria vesca]
+. . . . . . . . Morus notabilis .................     1 hits    1 orgs [Moraceae; Morus]
+. . . . . . . Fagus crenata .....................     1 hits    1 orgs [Fagales; Fagaceae; Fagus]
+. . . . . . . Papilionoideae ....................     9 hits    4 orgs [Fabales; Fabaceae]
+. . . . . . . . Cicer arietinum .................     1 hits    1 orgs [Cicereae; Cicer]
+. . . . . . . . Glycine max .....................     5 hits    1 orgs [Phaseoleae; Glycine; Soja]
+. . . . . . . . Lotus japonicus .................     2 hits    1 orgs [Loteae; Lotus]
+. . . . . . . . Medicago truncatula .............     1 hits    1 orgs [Trifolieae; Medicago]
+. . . . . . Vitis vinifera ......................    10 hits    1 orgs [rosids incertae sedis; Vitales; Vitaceae; Vitis]
+. . . . . . malvids .............................    14 hits    4 orgs 
+. . . . . . . Malvaceae .........................    12 hits    3 orgs [Malvales]
+. . . . . . . . Theobroma cacao .................     5 hits    1 orgs [Byttnerioideae; Theobroma]
+. . . . . . . . Gossypium .......................     7 hits    2 orgs [Malvoideae]
+. . . . . . . . . Gossypium raimondii ...........     5 hits    1 orgs 
+. . . . . . . . . Gossypium hirsutum ............     2 hits    1 orgs 
+. . . . . . . Eucalyptus grandis ................     2 hits    1 orgs [Myrtales; Myrtaceae; Myrtoideae; Eucalypteae; Eucalyptus]
+. . . . . lamiids ...............................     7 hits    4 orgs [asterids]
+. . . . . . Solanaceae ..........................     6 hits    3 orgs [Solanales]
+. . . . . . . Solanum ...........................     4 hits    2 orgs [Solanoideae; Solaneae]
+. . . . . . . . Solanum lycopersicum ............     3 hits    1 orgs [Lycopersicon]
+. . . . . . . . Solanum tuberosum ...............     1 hits    1 orgs 
+. . . . . . . Nicotiana sylvestris ..............     2 hits    1 orgs [Nicotianoideae; Nicotianeae; Nicotiana]
+. . . . . . Sesamum indicum .....................     1 hits    1 orgs [Lamiales; Pedaliaceae; Sesamum]
+. . . . Nelumbo nucifera ........................     2 hits    1 orgs [stem eudicotyledons; Proteales; Nelumbonaceae; Nelumbo]
+. . . commelinids ...............................    20 hits   10 orgs [Liliopsida; Petrosaviidae]
+. . . . Musa acuminata subsp. malaccensis .......     4 hits    1 orgs [Zingiberales; Musaceae; Musa; Musa acuminata]
+. . . . Arecaceae ...............................     5 hits    2 orgs [Arecales]
+. . . . . Elaeis guineensis .....................     3 hits    1 orgs [Arecoideae; Cocoseae; Elaeidinae; Elaeis]
+. . . . . Phoenix dactylifera ...................     2 hits    1 orgs [Coryphoideae; Phoeniceae; Phoenix]
+. . . . Poaceae .................................    11 hits    7 orgs [Poales]
+. . . . . Panicoideae ...........................     3 hits    2 orgs [PACMAD clade]
+. . . . . . Sorghum bicolor .....................     2 hits    1 orgs [Andropogonodae; Andropogoneae; Sorghinae; Sorghum]
+. . . . . . Setaria italica .....................     1 hits    1 orgs [Panicodae; Paniceae; Cenchrinae; Setaria]
+. . . . . Oryza .................................     8 hits    5 orgs [BOP clade; Oryzoideae; Oryzeae; Oryzinae]
+. . . . . . Oryza sativa ........................     6 hits    3 orgs 
+. . . . . . . Oryza sativa Japonica Group .......     4 hits    1 orgs 
+. . . . . . . Oryza sativa Indica Group .........     1 hits    1 orgs 
+. . . . . . Oryza brachyantha ...................     1 hits    1 orgs 
+. . . . . . Oryza minuta ........................     1 hits    1 orgs 
+. . Amborella trichopoda ........................     2 hits    1 orgs [basal Magnoliophyta; Amborellales; Amborellaceae; Amborella]
+. Picea glauca ..................................     1 hits    1 orgs [Acrogymnospermae; Pinidae; Pinales; Pinaceae; Picea]

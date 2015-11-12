@@ -1,0 +1,66 @@
+Taxonomy Report
+
+Magnoliophyta .................................   129 hits   38 orgs [root; cellular organisms; Eukaryota; Viridiplantae; Streptophyta; Streptophytina; Embryophyta; Tracheophyta; Euphyllophyta; Spermatophyta]
+. Mesangiospermae .............................   127 hits   37 orgs 
+. . eudicotyledons ............................   116 hits   34 orgs 
+. . . Pentapetalae ............................   110 hits   32 orgs [Gunneridae]
+. . . . rosids ................................   107 hits   30 orgs 
+. . . . . fabids ..............................    73 hits   24 orgs 
+. . . . . . Malpighiales ......................    19 hits    4 orgs 
+. . . . . . . Jatropha curcas .................     4 hits    1 orgs [Euphorbiaceae; Crotonoideae; Jatropheae; Jatropha]
+. . . . . . . Populus .........................    15 hits    3 orgs [Salicaceae; Saliceae]
+. . . . . . . . Populus euphratica ............     5 hits    1 orgs 
+. . . . . . . . Populus trichocarpa ...........     8 hits    1 orgs 
+. . . . . . . . Populus tremuloides ...........     2 hits    1 orgs 
+. . . . . . Fagus crenata .....................     1 hits    1 orgs [Fagales; Fagaceae; Fagus]
+. . . . . . Rosales ...........................    31 hits    8 orgs 
+. . . . . . . Rosaceae ........................    27 hits    7 orgs 
+. . . . . . . . Maloideae .....................    22 hits    5 orgs 
+. . . . . . . . . Maleae ......................    13 hits    2 orgs 
+. . . . . . . . . . Malus domestica ...........     7 hits    1 orgs [Malus]
+. . . . . . . . . . Pyrus x bretschneideri ....     6 hits    1 orgs [Pyrus]
+. . . . . . . . . Prunus ......................     9 hits    3 orgs [Amygdaleae]
+. . . . . . . . . . Prunus persica ............     6 hits    1 orgs 
+. . . . . . . . . . Prunus mume ...............     2 hits    1 orgs 
+. . . . . . . . . . Prunus avium ..............     1 hits    1 orgs 
+. . . . . . . . Fragaria ......................     5 hits    2 orgs [Rosoideae; Potentilleae; Fragariinae]
+. . . . . . . . . Fragaria x ananassa .........     2 hits    1 orgs 
+. . . . . . . . . Fragaria vesca subsp. vesca .     3 hits    1 orgs [Fragaria vesca]
+. . . . . . . Morus notabilis .................     4 hits    1 orgs [Moraceae; Morus]
+. . . . . . Papilionoideae ....................    22 hits   11 orgs [Fabales; Fabaceae]
+. . . . . . . Trifolieae ......................    16 hits    6 orgs 
+. . . . . . . . Trifolium .....................     9 hits    4 orgs 
+. . . . . . . . . Trifolium repens ............     3 hits    1 orgs 
+. . . . . . . . . Trifolium occidentale .......     2 hits    1 orgs 
+. . . . . . . . . Trifolium affine ............     2 hits    1 orgs 
+. . . . . . . . . Trifolium arvense ...........     2 hits    1 orgs 
+. . . . . . . . Medicago ......................     7 hits    2 orgs 
+. . . . . . . . . Medicago truncatula .........     4 hits    1 orgs 
+. . . . . . . . . Medicago sativa .............     3 hits    1 orgs 
+. . . . . . . Cicer arietinum .................     1 hits    1 orgs [Cicereae; Cicer]
+. . . . . . . Phaseoleae ......................     5 hits    4 orgs 
+. . . . . . . . Phaseolus vulgaris ............     2 hits    1 orgs [Phaseolus]
+. . . . . . . . Soja ..........................     2 hits    2 orgs [Glycine]
+. . . . . . . . . Glycine max .................     1 hits    1 orgs 
+. . . . . . . . . Glycine soja ................     1 hits    1 orgs 
+. . . . . . . . Vigna angularis ...............     1 hits    1 orgs [Vigna]
+. . . . . malvids .............................    23 hits    5 orgs 
+. . . . . . Malvaceae .........................    15 hits    4 orgs [Malvales]
+. . . . . . . Theobroma cacao .................     6 hits    1 orgs [Byttnerioideae; Theobroma]
+. . . . . . . Gossypium .......................     9 hits    3 orgs [Malvoideae]
+. . . . . . . . Gossypium arboreum ............     1 hits    1 orgs 
+. . . . . . . . Gossypium raimondii ...........     6 hits    1 orgs 
+. . . . . . . . Gossypium hirsutum ............     2 hits    1 orgs 
+. . . . . . Eucalyptus grandis ................     8 hits    1 orgs [Myrtales; Myrtaceae; Myrtoideae; Eucalypteae; Eucalyptus]
+. . . . . Vitis vinifera ......................    11 hits    1 orgs [rosids incertae sedis; Vitales; Vitaceae; Vitis]
+. . . . Beta vulgaris subsp. vulgaris .........     2 hits    1 orgs [Caryophyllales; Amaranthaceae; Beta; Beta vulgaris]
+. . . . Solanum lycopersicum ..................     1 hits    1 orgs [asterids; lamiids; Solanales; Solanaceae; Solanoideae; Solaneae; Solanum; Lycopersicon]
+. . . stem eudicotyledons .....................     6 hits    2 orgs 
+. . . . Nelumbo nucifera ......................     5 hits    1 orgs [Proteales; Nelumbonaceae; Nelumbo]
+. . . . Epimedium sagittatum ..................     1 hits    1 orgs [Ranunculales; Berberidaceae; Berberidoideae; Epimedium]
+. . commelinids ...............................    11 hits    3 orgs [Liliopsida; Petrosaviidae]
+. . . Arecaceae ...............................     7 hits    2 orgs [Arecales]
+. . . . Phoenix dactylifera ...................     4 hits    1 orgs [Coryphoideae; Phoeniceae; Phoenix]
+. . . . Elaeis guineensis .....................     3 hits    1 orgs [Arecoideae; Cocoseae; Elaeidinae; Elaeis]
+. . . Musa acuminata subsp. malaccensis .......     4 hits    1 orgs [Zingiberales; Musaceae; Musa; Musa acuminata]
+. Amborella trichopoda ........................     2 hits    1 orgs [basal Magnoliophyta; Amborellales; Amborellaceae; Amborella]

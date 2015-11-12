@@ -63,7 +63,7 @@ Matches from other species including PREDICTIONS:
 	hypothetical protein POPTR_0018s05530g [Populus trichocarpa]
 	E-value: 4e-96	Ident: 56% 	Accession: XP_006371894.1
 
-	##FASTA files located in git repository.
+	##FASTA files located in git repository named by Accession number.
 
 7) (15 pts) Now, find a nucleotide sequence of the same gene from Jatropha curcas-what is its accession number (2pts)?
 
@@ -90,7 +90,7 @@ Matches from other species including PREDICTIONS:
 	Populus trichocarpa hypothetical protein (POPTR_0018s05530g) mRNA, complete cds
 	E-value: 3e-129	Ident: 83% 	Accession: XM_006371832.1
 
-	Populus tremuloides MYB transcription factor R2R3-like protein (MYB086) mRNA, partial cds
+	Populus tremuloides MYB transcription factor R2R3-like protein (MYB086) mRNA, partial cds 
 	E-value: 9e-129	Ident: 83% 	Accession: FJ573152.1
 
 	PREDICTED: Populus euphratica myb-related protein 308-like (LOC105122132), mRNA
@@ -108,7 +108,8 @@ Matches from other species including PREDICTIONS:
 	Theobroma cacao Duplicated homeodomain-like superfamily protein (TCM_037376) mRNA, complete cds
 	E-value: 3e-118	Ident: 88% 	Accession: XM_007012346.1
  
-	##FASTA files located in git repository.
+	##FASTA files located in git repository named by Accession number.
+	##The second and fourth hits are different versions of the same sequence.
 
 8) (15 pts) You have decided, as part of your dissertation, to investigate metapopulation dynamics of the Glanville fritillary butterfly and thus you need to measure population structure across a landscape. You would like to first assess what genomic tools are available for this non-model organism. (Each question below is worth 3 points).
 
@@ -119,7 +120,7 @@ Matches from other species including PREDICTIONS:
 
         2-What tools are they suggesting will be developed?
 
-	
+	Doing some discussion with the rest of the class, the generalized opinion was that the LiSs tool, named on the next answer, was the answer for this question. I disagree, LiSs, although it is unpublished, is listed under the resources that they have developed to work with this species' genome. Looking at the papers they have published they make reference to the sequences that have not been aligned yet, which represent 28% of the total genome. The tools they suggest to develop may be related to finishing this portion of the genome, and annotating it.
 
         3-What tools have they developed?
 
@@ -138,7 +139,7 @@ Matches from other species including PREDICTIONS:
 
         5-Describe how you would take sequences that may be available for this species and develop a strategy for developing more SNPs that are not micro-array dependent. You will need to delve into outside resources prior to formulating a good answer!
 
- 
+ 	This species Genome has not been widely sequenced. The fact that there is only one assembly (incomplete) makes this work harder. This assembly (University of Helsinki) would serve as the reference genome. Having the total sequenced reads, not only the final assembly, could provide some data to be used in SNPs detection. There are also some individual sequences of certain genes (most from the University of Helsinki) that can be used for this purpose. After having the reference genome, and plenty sequences to align, SNP detection can be done through tools such as the ones in GATK, SAMtools, or FreeBayes, whcih can also help in some other variant calling experiments. These would be the tools to use with the existent sequences. Some other tools such as Restriction-site Associated DNA sequencing (RADseq) could be used, specifically for the parts of the reference genome that haven't been assembled yet. Although this would require new sequencing.     
 
 9) (15 points; basic unix) Using the Homo_sapiens.GRCh38.cds.all.fa file (link here), answer the following questions. Supply the unix command you used followed by the answer. (Each question is worth 5 points).
 
@@ -177,19 +178,3 @@ Matches from other species including PREDICTIONS:
 	$ grep -v "^#" Homo_sapiens.GRCh38.82.abinitio.gtf | grep "transcript" > Homo_sapiens.GRCh38.82.abinitio_transcript.bed
 	$ grep -v "^#" Homo_sapiens.GRCh38.82.abinitio.gtf | grep "exon" > Homo_sapiens.GRCh38.82.abinitio_exon.bed
 
- 
-
-11) (30 points total; ggplot2 in R and RMarkdown) To complete these tasks, you will need to load the exon or transcript-only files that you made above into R Studio. Alternatively, you can use the Homo_sapiens.GRCh38.82.abinitio.gtf file and subset it as necessary.
-
-	1-Make a table of the average exon and transcript length (±SE) for each chromosome. RMarkdown cheatsheet here: https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
-        2-Make a frequency histogram of exon lengths for the X and Y chromosomes, either separately or together.
-        3-Is there a relationship between total chromosome length and average exon length across chromosomes? (Hint: plot average exon length per chromosome against each chromosome’s total length, and estimate a correlation coefficient using R).
-        4-Return these tasks in a single RMarkdown document, saved either as pdf or html, with tables and figures embedded. (15 points)
-
- 
-
-12)(20 points) You want to run a long job to the flux to perform an RNA-seq experiment. Clearly the steps that take the longest are those that require you to map the reads back to your reference transcriptome. Write an example .pbs script that would allow you to run these commands, and turn this in. Hint: you can use a pbs script from our blast exercise and replace the blast command with your alignment commands.
-
- 
-
-13) (15 points; git) Submit all of your work on a git repository named ‘Exam1_yourlastname,’ with a separate subdirectory (folder) with materials requested for each question.

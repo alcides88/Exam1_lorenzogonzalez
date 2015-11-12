@@ -5,8 +5,9 @@ date: "November 8, 2015"
 output: html_document
 ---
 
+Software: RStudio Version 0.99.486
 
-  1-Make a table of the average exon and transcript length (±SE) for each chromosome. RMarkdown cheatsheet here: https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+  1-Make a table of the average exon and transcript length (?SE) for each chromosome. RMarkdown cheatsheet here: https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 
 ```{r Q1 chunk, echo=TRUE, eval=TRUE}
 transcript <- read.csv("Homo_sapiens.GRCh38.82.abinitio_transcript.bed", header = FALSE, sep = "")
